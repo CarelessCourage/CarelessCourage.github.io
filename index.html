@@ -14,7 +14,6 @@
 					scrolling="<scrolling>"
 					id="destiny"
 					src="https://www.destiny.gg/embed/chat"
-					height="100%"
 					width="100%">
 				</iframe>
 			</div>
@@ -115,6 +114,7 @@
 				display: grid;
 				width: 100%;
 				grid-template-columns: auto 1fr;
+				grid-template-rows: 1fr, 2fr;
 					grid-gap: .5em;
 				margin-top: -.1em;
 				margin-left: -.4em;
@@ -125,6 +125,9 @@
 				background-color: #021117;
 				padding: 0em;
 			}
+	iframe {
+		height: calc(100% - 2em)
+	}
 			.highlight {
 				background-color: #000000;
 			}
